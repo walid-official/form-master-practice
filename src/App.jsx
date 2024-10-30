@@ -1,5 +1,6 @@
 import './App.css'
-import StatefulForm from './components/State-Form/StatefulForm';
+import FormReference from './components/ReferenceForm/FormReference';
+// import StatefulForm from './components/State-Form/StatefulForm';
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
         <input placeholder='Enter' className='border' type="text" name="phone" id="" />
         <input className='border' type="submit" value="Submit" />
      </form> */}
-     <StatefulForm></StatefulForm>
+     {/* <StatefulForm></StatefulForm> */}
+    <FormReference></FormReference>
     </>
   )
 }
