@@ -1,9 +1,21 @@
 import './App.css'
-import NewFormHook from './components/NewFormHook/NewFormHook';
+import ReuseableForm from './components/ReuseableForm/ReuseableForm'
+// import NewFormHook from './components/NewFormHook/NewFormHook';
 // import FormReference from './components/ReferenceForm/FormReference';
 // import StatefulForm from './components/State-Form/StatefulForm';
 
 function App() {
+
+  const handleSignUp = data => {
+    console.log(data);
+  }
+
+  const handleUpdateProfile = data => {
+    console.log(data);
+  }
+
+
+
 
     // const handleSubmit = e => {
     //   e.preventDefault()
@@ -24,7 +36,17 @@ function App() {
      </form> */}
      {/* <StatefulForm></StatefulForm> */}
     {/* <FormReference></FormReference> */}
-    <NewFormHook></NewFormHook>
+    {/* <NewFormHook></NewFormHook> */}
+    <ReuseableForm FormTitle={'SignUP'} handleSubmit={handleSignUp}>
+      <div className="">
+        <p>Sign Up Your Account</p>
+      </div>
+    </ReuseableForm>
+    <ReuseableForm FormTitle={'Profile Update'} handleSubmit={handleUpdateProfile} submitBtnText={"Update"}>
+      <div className="">
+        <p>Always keep Your Profile Updated</p>
+      </div>
+    </ReuseableForm>
     </>
   )
 }
