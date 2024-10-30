@@ -1,5 +1,6 @@
 import './App.css'
-import FormReference from './components/ReferenceForm/FormReference';
+import NewFormHook from './components/NewFormHook/NewFormHook';
+// import FormReference from './components/ReferenceForm/FormReference';
 // import StatefulForm from './components/State-Form/StatefulForm';
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
         <input className='border' type="submit" value="Submit" />
      </form> */}
      {/* <StatefulForm></StatefulForm> */}
-    <FormReference></FormReference>
+    {/* <FormReference></FormReference> */}
+    <NewFormHook></NewFormHook>
     </>
   )
 }
